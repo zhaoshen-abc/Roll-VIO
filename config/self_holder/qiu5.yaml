@@ -1,0 +1,34 @@
+%YAML:1.0
+
+model_type: PINHOLE
+camera_name: camera1
+image_width: 640
+image_height: 480
+distortion_parameters:
+   k1: 0.1078
+   k2: -0.1708
+   p1: 0.0
+   p2: 0.0
+projection_parameters:
+   fx: 513.9484
+   fy: 514.1734
+   cx: 327.3502
+   cy: 244.3200
+
+extrinsicRotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [0.003333373346170, -0.903192643910295, -0.429222479150925,
+          -0.998832255969466, 0.017680546874742, -0.044961346700893, 
+           0.048197645762868, 0.428871130117826, -0.902079010228249]
+#Translation from camera frame to imu frame, imu^T_cam
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [-0.08245,0.0,-0.06898]
+#todo
+
+
+td: 0.0                             # initial value of time offset. unit: s. readed image clock + td = real image clock (IMU clock)

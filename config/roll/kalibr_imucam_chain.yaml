@@ -1,0 +1,60 @@
+%YAML:1.0
+
+cam0:
+  T_imu_cam: #rotation from camera to IMU, position of IMU in camera
+    - [0.003333373346170, 0.903192643910295, 0.429222479150925, 0.08245]
+    - [-0.998832255969466, -0.017680546874742, 0.044961346700893, 0.0]
+    - [0.048197645762868, -0.428871130117826, 0.902079010228249, 0.24992]
+    - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.119,-0.177,0.001,-0.003]
+  distortion_model: radtan
+  intrinsics: [483.575,483.330,320.800,260.013] #fu, fv, cu, cv
+  resolution: [640, 480]
+  # rostopic: /usb_cam2/image_raw2 
+  rostopic: /usb_cam2/image_raw
+
+
+cam1:
+  T_imu_cam: #rotation from camera to IMU, position of IMU in camera
+    - [0.003333373346170, -0.903192643910295, -0.429222479150925, -0.006]
+    - [-0.998832255969466, 0.017680546874742, -0.044961346700893, -0.068]
+    - [ 0.048197645762868, 0.428871130117826, -0.902079010228249, -0.236]
+    - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.086,-0.182,0.008,-0.005]
+  distortion_model: radtan
+  intrinsics: [508.515,503.425,324.996,239.843] #fu, fv, cu, cv
+  resolution: [640, 480]
+  # rostopic: /usb_cam5/image_raw5
+  rostopic: /usb_cam1/image_raw
+
+cam2:
+  T_imu_cam: #rotation from camera to IMU, position of IMU in camera
+    - [-0.998832255969466, 0.017680546874742, -0.044961346700893, 0.0]
+    - [-0.048197645762868,  -0.428871130117826, 0.902079010228249, 0.13848]
+    - [-0.003333373346170, 0.903192643910295, 0.429222479150925, 0.16581]
+    - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [1]
+  camera_model: pinhole
+  distortion_coeffs: [0.0918,-0.1455,0.0,0.0]
+  distortion_model: radtan
+  intrinsics: [467.7268,467.6692,343.8369,246.9052] #fu, fv, cu, cv
+  resolution: [640, 480]
+  rostopic: /usb_cam1/image_raw1
+
+cam3:
+  T_imu_cam: #rotation from camera to IMU, position of IMU in camera
+    - [-0.003333373346170, 0.903192643910295, 0.429222479150925, 0.08245]
+    - [0.048197645762868, 0.428871130117826, -0.902079010228249, -0.13848]
+    - [-0.998832255969466, 0.017680546874742, -0.044961346700893, 0.07859]
+    - [0.0, 0.0, 0.0, 1.0]
+  cam_overlaps: [0]
+  camera_model: pinhole
+  distortion_coeffs: [0.0925,-0.1425,0.0,0.0]
+  distortion_model: radtan
+  intrinsics: [466.2794,466.1960,336.2281,249.0853] #fu, fv, cu, cv
+  resolution: [640, 480]
+  rostopic: /usb_cam4/image_raw4

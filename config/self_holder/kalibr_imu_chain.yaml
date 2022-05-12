@@ -1,0 +1,16 @@
+%YAML:1.0
+
+imu0:
+  T_i_b:
+    - [1.0, 0.0, 0.0, 0.0]
+    - [0.0, 1.0, 0.0, 0.0]
+    - [0.0, 0.0, 1.0, 0.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  accelerometer_noise_density: 2.2859234725978644e-01   # [ m / s^2 / sqrt(Hz) ]   ( accel "white noise" )0.19414387506337335
+  accelerometer_random_walk: 1.9314495004321816e-04    # [ m / s^3 / sqrt(Hz) ].  ( accel bias diffusion )0.00019401655657496043
+  gyroscope_noise_density: 4.7342050885165439e-02     # [ rad / s / sqrt(Hz) ]   ( gyro "white noise" )0.0082247909837956381
+  gyroscope_random_walk: 6.2228941305617831e-06       # [ rad / s^2 / sqrt(Hz) ] ( gyro bias diffusion )0.0000017110315790057112
+  model: calibrated
+  rostopic: /imu_ah100b/imu_raw
+  time_offset: 0.0
+  update_rate: 100.0

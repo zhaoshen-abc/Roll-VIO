@@ -1,0 +1,17 @@
+%YAML:1.0
+
+imu0:
+  T_i_b:
+    - [1.0, 0.0, 0.0, 5.0]
+    - [0.0, 1.0, 0.0, 5.0]
+    - [0.0, 0.0, 1.0, 5.0]
+    - [0.0, 0.0, 0.0, 1.0]
+  accelerometer_noise_density: 0.19414387506337335   # [ m / s^2 / sqrt(Hz) ]   ( accel "white noise" )0.19414387506337335
+  accelerometer_random_walk: 0.00019401655657496043    # [ m / s^3 / sqrt(Hz) ].  ( accel bias diffusion )0.00019401655657496043
+  gyroscope_noise_density: 0.0082247909837956381     # [ rad / s / sqrt(Hz) ]   ( gyro "white noise" )0.0082247909837956381
+  gyroscope_random_walk: 0.0000017110315790057112       # [ rad / s^2 / sqrt(Hz) ] ( gyro bias diffusion )0.0000017110315790057112
+  model: calibrated
+  # rostopic: /mavros/imu/data_raw
+  rostopic: /mynteye/imu/data_raw
+  time_offset: 0.0
+  update_rate: 100.0

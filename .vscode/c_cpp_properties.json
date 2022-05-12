@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/opt/ros/noetic/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/ov_core/src"
+            ],
+            "name": "ROS"
+        }
+    ],
+    "version": 4
+}
